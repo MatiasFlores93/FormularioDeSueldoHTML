@@ -1,0 +1,110 @@
+body{
+	background: url("../img/bg.png")
+}
+
+img{
+	border: opx;
+}
+
+.info{ 
+	font-family:'Merienda', cursive; 
+	padding:0px; 
+}
+
+h1.title{ 
+	font-family:'Merienda', cursive; 
+	padding:0px; 
+	text-shadow: black 2px 2px 2px;
+	color: #353434;
+}
+
+.fieldset {
+    margin: 20px;
+	width: 500px;
+	background-color: #adbfc7;
+	color: #353434;
+	letter-spacing: 1px;
+	font-family:'Merienda', cursive;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+}
+
+.fieldset .legend{
+    background-color: #689cd2;
+    border: 1px solid #CCCCCC;
+    font-weight: bold;
+    margin: 0 0 0 -40px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+	color: #353434;
+	letter-spacing: 1px;
+	font-family:'Merienda', cursive;
+	-webkit-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+}
+
+td{
+	width:200px;
+	background:transparent;
+	vertical-align: top;
+	text-align:left;
+	padding: 3px;
+}
+
+input{
+	width:165px;
+	display: block;
+}		
+
+select {
+	width: 140px;
+}
+
+.ayuda{
+	visibility: hidden;
+	position: absolute;
+	margin-top: -25px;
+	margin-left: 180px;
+	border: 1px solid #cccccc;
+	background: #c1d5de;
+	padding-left: 5px;
+	padding-right: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.75);
+}
+
+.volver{
+	text-decoration: none;
+	padding-top: 3px;
+	padding-left: 20px;
+	display: block;
+	width: 80px;
+	height: 21px;
+	background: url(../img/button.png);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 0px solid #cccccc;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(194,192,194,0.31);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(194,192,194,0.31);
+	box-shadow: 1px 1px 1px 0px rgba(194,192,194,0.31);
+	color: #424142;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+	letter-spacing: 1px;
+}
+
+.volver:hover{
+	background: url(../img/button2.png);
+}

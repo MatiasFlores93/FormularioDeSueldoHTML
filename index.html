@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Formulario de Sueldos</title>
+	<link href='css/fuentes.css' rel='stylesheet' type='text/css'>
+	<link href="css/estilo_form.css" type="text/css" rel="stylesheet" />
+	<script language="javascript" type="text/javascript" src="js/funciones.js"></script>
+	<script src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/formularios.js"></script>
+	<style type="text/css" media="screen">
+		h1 {
+			margin-top: 0;
+		}
+		label {
+			font-size: 11px;
+			font-weight: bold;
+			text-transform: uppercase;
+			display: block;
+			margin-bottom: 3px;
+			clear: both;
+		}
+		.error {
+			background-color: #FF8080;
+		}
+		.hide {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+<center>
+	<img src="img/banner.jpg" width="900px" height="100px">
+	<br><br>
+	<h1 class="title">Calculo de imponible</h1>
+	<fieldset class="fieldset">
+		<legend class="legend">
+			<span>Datos del empleado</span>
+		</legend>
+		<form class="styleThese" name="Sueldo" action="" method="post" enctype="multipart/form-data">
+			<table>
+				<tr onMouseOver="mostrar('info1');" onMouseOut="ocultar('info1');"><td>
+					<label>Nombre:</label>
+				</td><td>
+					<input class="texto" type="text" name="Nombre" id="Nombre" value="" placeholder ="Ej. Matias Flores"/>
+					<div class="ayuda" id="info1">Ingrese el nombre del empleado.</div>
+				</td></tr>
+				<tr onMouseOver="mostrar('info2');" onMouseOut="ocultar('info2');"><td>
+					<label>Sueldo base:</label>
+				</td><td>
+					<input class="texto" type="text" name="SueldoBas" id="SueldoBas" value="" placeholder ="Ej. 200000"/>
+					<div class="ayuda" id="info2">Ingrese el sueldo base del empleado.</div>
+				</td></tr>
+				<tr onMouseOver="mostrar('info3');" onMouseOut="ocultar('info3');"><td>
+					<label>N&#176; de hrs Extra:</label>
+				</td><td>
+					<input class="texto" type="text" name="HrsExtra" id="HrsExtra" value="" placeholder ="Ej. 2"/>
+					<div class="ayuda" id="info3">Ingrese la cantidad de horas extras.</div>
+				</td></tr>
+				<tr onMouseOver="mostrar('info4');" onMouseOut="ocultar('info4');"><td>
+					<label>Cargas</label>
+				</td><td>
+					<table>
+						<tr><td>
+							<label>Si</label>
+						</td><td>
+							<input type ="radio" name="Cargas" value="1"/>
+						</td><td>
+							<label>No</label>
+						</td><td>
+							<input type ="radio" name="Cargas" value="2"/>
+						</td></tr>
+					</table>
+					<div class="ayuda" id="info4">Seleccione si el empleado tiene cargas o no.</div>
+				</td></tr>
+				<tr onMouseOver="mostrar('info5');" onMouseOut="ocultar('info5');"><td>
+					<label>Turno</label>
+				</td><td>
+					<select name="Turno" align="center">
+						<option value ="1" > Elejir</option>
+						<option value ="2" > Ma&ntilde;ana </option>
+						<option value ="3" > Tarde </option>
+						<option value ="4" > Noche</option>
+					</Select>
+					<div class="ayuda" id="info5">Seleccionar el turno correspondiente del empleado</div>
+				</td></tr>
+				<tr><td>
+				<table>
+					<tr><td>
+					<input type="button" value="Calcular" onclick="validar()" />
+					</td><td>
+					<input type="reset" value="Limpiar"/>
+					</td></tr>
+				</table>
+				</td></tr>
+			</table>
+		</form>
+	</fieldset>
+	<marquee class="info" behaviour=alternate scrolldelay=100%>Sueldo Minimo Mensual $210.000 - Unidad de fomento (UF)	$23.610,77 - D&oacute;lar acuerdo	$728,70	Pesos</marquee>
+</center>
+</body>
+</html>
